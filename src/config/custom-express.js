@@ -7,7 +7,7 @@ const express = require('express');
 const app = express();
 
 app.use('/estatico', 
-	express.static(`${__dirname}/public`)
+	express.static(`src/app/public`)
 );
 
 app.use(bodyParser.urlencoded({
